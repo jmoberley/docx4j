@@ -261,6 +261,7 @@
                             com.topologi.diffx.event,
                             com.topologi.diffx.xml,
                             com.topologi.diffx.xml.esc,
+                            javax.imageio.*,
                             javax.xml.bind,
                             javax.xml.bind.annotation,
                             javax.xml.bind.annotation.adapters,
@@ -289,6 +290,7 @@
                             org.apache.commons.io.output,
                             org.apache.commons.lang;version="[2.4,3)",
                             org.apache.commons.lang.text;version="[2.4,3)",
+                            org.apache.commons.logging,
                             org.apache.fop.apps,
                             org.apache.poi.hwpf,
                             org.apache.poi.hwpf.model,
@@ -298,11 +300,6 @@
                             org.apache.poi.poifs.filesystem,
                             org.apache.xalan.extensions;resolution:=optional,
                             org.apache.xml.serializer,
-                            org.apache.xmlgraphics.fonts;resolution:=optional,
-                            org.apache.xmlgraphics.image.loader;resolution:=optional,
-                            org.apache.xmlgraphics.image.loader.cache;resolution:=optional,
-                            org.apache.xmlgraphics.image.loader.impl;resolution:=optional,
-                            org.apache.xmlgraphics.java2d;resolution:=optional,
                             org.plutext.jaxb.svg11,
                             org.plutext.jaxb.xmldsig;resolution:=optional,
                             org.plutext.jaxb.xslfo;resolution:=optional,
@@ -345,7 +342,7 @@
                             org.docx4j.*
                         </Export-Package>
                         <!--<Embed-Dependency>jaxb-svg11;scope=compile|runtime</Embed-Dependency>-->
-                        <Embed-Dependency>xalan,serializer;scope=compile|runtime</Embed-Dependency>
+                        <Embed-Dependency>xalan,serializer,xmlgraphics-commons;scope=compile|runtime</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
